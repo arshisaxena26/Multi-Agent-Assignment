@@ -1,0 +1,210 @@
+Demo 1:
+=== SupportFlow AI ===
+
+Enter your support request:
+> I was charged twice for my order and need a refund urgently
+
+=== Final Output ===
+
+Customer Name: Unknown
+Issue Summary: The customer was charged twice for their order and needs a refund.
+Category: Refund Request
+Priority: High
+Recommended Action: Escalate to Refund Request support team.
+Reply:
+Dear Customer,
+
+Thank you for reaching out to us regarding the duplicate charge on your order. We understand how important this matter is and are here to assist you. To expedite the refund process, could you please provide us with your order ID and the payment method used for the transaction?
+
+Once we have this information, we will escalate your request to our billing team for immediate attention.
+
+Thank you for your patience and understanding.
+
+Best regards,
+Customer Support Team
+
+=== Execution Trace ===
+- Intake Agent extracted customer_name, issue_summary, and sentiment.
+- Classification Agent set category = Refund Request.
+- Priority Agent set priority = High. Reason: The customer is experiencing a duplicate charge, which typically requires immediate attention.
+- Resolution Agent generated recommended_action and draft_reply using KB and escalation tools.
+
+
+Demo 2:
+=== SupportFlow AI ===
+
+Enter your support request:
+> My payment failed but money was deducted from my account
+
+=== Final Output ===
+
+Customer Name: Unknown
+Issue Summary: The customer experienced a payment failure despite money being deducted from their account.
+Category: Billing
+Priority: High
+Recommended Action: Escalate to Billing support team for further investigation.
+Reply:
+Dear Customer,
+
+Thank you for reaching out to us regarding the payment issue you are experiencing. We understand how concerning it can be when a payment fails but funds are still deducted from your account. 
+
+To assist you better, could you please verify your billing details and check for any payment confirmation? If you suspect a duplicate payment, we will escalate this matter to our Billing support team for further investigation.
+
+We appreciate your patience as we work to resolve this issue for you.
+
+Best regards,
+Customer Support Team
+
+=== Execution Trace ===
+- Intake Agent extracted customer_name, issue_summary, and sentiment.
+- Classification Agent set category = Billing.
+- Priority Agent set priority = High. Reason: Payment failure with money deducted from the account indicates a significant issue that needs urgent attention.   
+- Resolution Agent generated recommended_action and draft_reply using KB and escalation tools.
+
+Demo 3:
+=== SupportFlow AI ===
+
+Enter your support request:
+> The app keeps crashing every time I try to open it
+
+=== Final Output ===
+
+Customer Name: Unknown
+Issue Summary: The app crashes whenever it is opened.
+Category: Technical Issue
+Priority: Critical
+Recommended Action: Escalate immediately to senior support team after gathering necessary information.
+Reply:
+Thank you for reaching out to us regarding the issue you are experiencing with the app crashing. To assist you better, could you please provide us with the following information: the device you are using, the version of the app or browser, a screenshot of the error, and the exact error message you are encountering? This will help us in resolving the issue more effectively. Once we have this information, we will escalate your case to our senior support team for further assistance. 
+
+Thank you for your cooperation. 
+
+Best regards,
+Customer Support Team
+
+=== Execution Trace ===
+- Intake Agent extracted customer_name, issue_summary, and sentiment.
+- Classification Agent set category = Technical Issue.
+- Priority Agent set priority = Critical. Reason: The app is completely unusable, causing severe business impact.
+- Resolution Agent generated recommended_action and draft_reply using KB and escalation tools.
+
+Demo 4:
+=== SupportFlow AI ===
+
+Enter your support request:
+> I cannot log into my account even after resetting my password
+
+=== Final Output ===
+
+Customer Name: Unknown
+Issue Summary: The customer is unable to log into their account despite resetting their password.
+Category: Account Access
+Priority: High
+Recommended Action: Escalate to Account Access support team for further assistance.
+Reply:
+Dear Customer,
+
+Thank you for reaching out to us. I understand that you are having trouble logging into your account even after resetting your password. This can be frustrating, and I apologize for the inconvenience.
+
+To assist you better, I would like to verify if multi-factor authentication is blocking your access. Please ensure that you have completed any required steps for this feature. If the issue persists, I will escalate your case to our Account Access support team, who will be able to provide you with further assistance.   
+
+Thank you for your patience as we work to resolve this matter.
+
+Best regards,
+Customer Support Team
+
+=== Execution Trace ===
+- Intake Agent extracted customer_name, issue_summary, and sentiment.
+- Classification Agent set category = Account Access.
+- Priority Agent set priority = High. Reason: The customer is unable to log into their account, which indicates a major technical block.
+- Resolution Agent generated recommended_action and draft_reply using KB and escalation tools.
+
+Demo 5:
+=== SupportFlow AI ===
+
+Enter your support request:
+> I want a refund for the product I returned last week
+
+=== Final Output ===
+
+Customer Name: Unknown
+Issue Summary: The customer is requesting a refund for a product they returned last week.
+Category: Refund Request
+Priority: Medium
+Recommended Action: Request the order ID, payment method, and reason for the refund to process the request.
+Reply:
+Dear Customer,
+
+Thank you for reaching out regarding your refund request. To assist you further, could you please provide your order ID, the payment method used for the purchase, and the reason for the refund? This information will help us process your request more efficiently.
+
+Thank you for your cooperation.
+
+Best regards,
+Customer Support Team
+
+=== Execution Trace ===
+- Intake Agent extracted customer_name, issue_summary, and sentiment.
+- Classification Agent set category = Refund Request.
+- Priority Agent set priority = Medium. Reason: The issue is a standard refund request without immediate urgency.
+- Resolution Agent generated recommended_action and draft_reply using KB and escalation tools.
+
+Demo 6:
+=== SupportFlow AI ===
+
+Enter your support request:
+> Can you tell me your pricing plans?
+
+=== Final Output ===
+
+Customer Name: Unknown
+Issue Summary: The customer is inquiring about pricing plans.
+Category: General Inquiry
+Priority: Low
+Recommended Action: Provide a standard informational response about pricing plans and direct the customer to help center resources.
+Reply:
+Thank you for reaching out to us. We offer a variety of pricing plans to suit different needs. You can find detailed information about our pricing options on our website or in our help center. If you have any specific questions or need further assistance, please feel free to ask. 
+
+Best regards,
+Customer Support Team
+
+=== Execution Trace ===
+- Intake Agent extracted customer_name, issue_summary, and sentiment.
+- Classification Agent set category = General Inquiry.
+- Priority Agent set priority = Low. Reason: The issue is a general inquiry about pricing plans, which does not indicate any immediate urgency.
+- Resolution Agent generated recommended_action and draft_reply using KB and escalation tools.
+
+Demo 7:
+=== SupportFlow AI ===
+
+Enter your support request:
+> This is ridiculous, your service is terrible and I want this fixed NOW
+
+=== Final Output ===
+
+Customer Name: Unknown
+Issue Summary: The customer is frustrated with the service and demands an immediate fix.
+Category: Technical Issue
+Priority: Critical
+Recommended Action: Escalate immediately to senior support team after gathering necessary information.
+Reply:
+Dear Customer,
+
+Thank you for reaching out to us. I understand your frustration and I apologize for the inconvenience you are experiencing with our service. To assist you better and expedite the resolution, could you please provide the following information:
+
+1. The device you are using
+2. The browser or app version
+3. A screenshot of the issue
+4. The exact error message you are encountering
+
+Once I have this information, I will escalate your case to our senior support team for immediate attention.
+
+Thank you for your patience and understanding.
+
+Best regards,
+Customer Support Team
+
+=== Execution Trace ===
+- Intake Agent extracted customer_name, issue_summary, and sentiment.
+- Classification Agent set category = Technical Issue.
+- Priority Agent set priority = Critical. Reason: The customer is experiencing severe frustration with the service and demands an immediate fix, indicating a service that is completely unusable.
+- Resolution Agent generated recommended_action and draft_reply using KB and escalation tools.

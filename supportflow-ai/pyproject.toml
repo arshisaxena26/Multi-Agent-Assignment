@@ -1,0 +1,13 @@
+[project]
+name = "supportflow-ai"
+version = "0.1.0"
+description = "A multi-agent customer support triage system built with LangGraph"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "langchain>=0.3.27",
+    "langchain-openai>=0.2.14",
+    "langgraph>=0.6.6",
+    "python-dotenv>=1.1.1",
+    "openai>=1.0.0",
+]
